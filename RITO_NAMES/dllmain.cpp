@@ -58,13 +58,12 @@ void dumpblock(int numchunk)
 		bool iswide = currentfname->info & 1;
 		if (iswide)
 			len = currentfname->info & 0xFFFE;
-
 		if (len == 0) break;
 
-	static	char tempbuf[0x2000];
+	    static	char tempbuf[0x2000];
 		ZeroMemory(tempbuf, 0x2000);
 		decrypt_name(currentfname, tempbuf, len);
-		auto firstchar = (currentfname);
+		
 		file << "[" << currentfname->index << "] " << tempbuf << "\n";
 		auto ost = ((len + 2) % 4);
 		if (ost)
