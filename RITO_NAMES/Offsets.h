@@ -21,8 +21,8 @@ struct FnamePool
 struct FnameEntry
 {
 	unsigned int index;
-	unsigned __int16 info; //x2
-	char firstcharachterCRYPTED;
+	unsigned __int16 info; 
+	char first_char_encrypted;
 };
 
 struct FName

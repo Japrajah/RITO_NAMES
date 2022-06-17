@@ -9,14 +9,13 @@ std::ofstream file{ "Names_Dump.txt" };
 // auto  sub_7FF657D53350 = (__int64(*)())0;
 unsigned int rito_key = 0;
 bool b_key_found = false;
-__int64 __fastcall decrypt_name(__int64 a1, char* buffer, int reallen)
+__int64 __fastcall decrypt_name(FnameEntry* fnameentry, char* buffer, int reallen)
 {
-	char* v2; __int64 v3; __int64 result; unsigned int v5; __int64 v6; __int64 v7; int v8;
+	char* v2; __int64 result; unsigned int v5; __int64 v6; __int64 v7; int v8;
 brutforcekey:
 	v2 = buffer;
-	v3 = a1;
-	memcpy(buffer, (const void*)(a1 + 6), reallen);
-	LODWORD(v3) = *(unsigned __int16*)(v3 + 4);
+	memcpy(buffer, (const void*)(&fnameentry->first_char_encrypted), reallen);
+	auto v3 = fnameentry->info;
 	//result = sub_7FF657D53350(); // 0x2CD3350
 	result = rito_key;
 	v5 = (unsigned int)v3 >> 1;
@@ -64,7 +63,7 @@ void dumpblock(int numchunk)
 
 	static	char tempbuf[0x2000];
 		ZeroMemory(tempbuf, 0x2000);
-		decrypt_name((__int64)currentfname, tempbuf, len);
+		decrypt_name(currentfname, tempbuf, len);
 		auto firstchar = (currentfname);
 		file << "[" << currentfname->index << "] " << tempbuf << "\n";
 		auto ost = ((len + 2) % 4);
