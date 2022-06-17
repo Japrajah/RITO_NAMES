@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RITO_NAMES", "RITO_NAMES\RITO_NAMES.vcxproj", "{3AEA1217-B436-4FD6-AEA1-CA1051529A3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AEA1217-B436-4FD6-AEA1-CA1051529A3D}.Debug|x64.ActiveCfg = Debug|x64
+		{3AEA1217-B436-4FD6-AEA1-CA1051529A3D}.Debug|x64.Build.0 = Debug|x64
+		{3AEA1217-B436-4FD6-AEA1-CA1051529A3D}.Debug|x86.ActiveCfg = Debug|Win32
+		{3AEA1217-B436-4FD6-AEA1-CA1051529A3D}.Debug|x86.Build.0 = Debug|Win32
+		{3AEA1217-B436-4FD6-AEA1-CA1051529A3D}.Release|x64.ActiveCfg = Release|x64
+		{3AEA1217-B436-4FD6-AEA1-CA1051529A3D}.Release|x64.Build.0 = Release|x64
+		{3AEA1217-B436-4FD6-AEA1-CA1051529A3D}.Release|x86.ActiveCfg = Release|Win32
+		{3AEA1217-B436-4FD6-AEA1-CA1051529A3D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACC2EFF1-A940-4BD4-AA47-0DB9BF2DFE40}
+	EndGlobalSection
+EndGlobal
