@@ -1,5 +1,5 @@
 # Result
-Outer 0x28
+
 struct
     {
        FunctionFlags = 0xB8
