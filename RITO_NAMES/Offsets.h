@@ -3,7 +3,7 @@
 
 namespace Offsets
 {
-	constexpr auto	NamePool = 0x859EC40;
+	/*5.00*/ constexpr auto	NamePool = 0x861D500; // 4.11  constexpr auto	NamePool = 0x859EC40
 	constexpr auto  GObjects = 0x0;
 	constexpr auto  GObjectskey = GObjects + 0x38;
 
