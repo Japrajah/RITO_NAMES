@@ -16,7 +16,7 @@ brutforcekey:
 	v2 = buffer;
 	memcpy(buffer, (const void*)(&fnameentry->first_char_encrypted), reallen);
 	auto v3 = fnameentry->info;
-	//result = sub_7FF657D53350(); // 0x2CD3350
+	//result = sub_7FF657D53350(); //
 	result = rito_key;
 	v5 = (unsigned int)v3 >> 1;
 	v8 = result;
