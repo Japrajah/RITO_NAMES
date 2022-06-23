@@ -96,7 +96,7 @@ void	dumpNames()
 HRESULT onAttach(HMODULE hModule)
 {
 	auto moduleBase = *(unsigned long long*)(__readgsqword(0x60) + 0x10);
-	//sub_7FF657D53350 = (__int64(*)())(moduleBase + 0x2CD3350); get key
+	//sub_7FF657D53350 = (__int64(*)())(moduleBase + 0xdead); get key
 	namepool = (FnamePool*)(moduleBase + Offsets::NamePool);
 	dumpNames();
 
